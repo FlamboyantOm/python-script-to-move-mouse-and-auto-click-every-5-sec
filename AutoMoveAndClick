@@ -1,0 +1,19 @@
+from random import *
+import win32api, win32con,time,tkinter
+def click(x,y):
+    # cursor move
+    win32api.SetCursorPos((x,y))
+    # click even call
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,x,y,0,0)
+while True:
+    #get screen size
+    root = tk.Tk()
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    #pass random value to axis
+    x = randint(screen_height,screen_width)
+    y = randint(screen_height,screen_width)
+    click(x,y)
+    print('i am moving to x=',x,' and y=',y)
+    time.sleep(10)#call each 10 seconds
