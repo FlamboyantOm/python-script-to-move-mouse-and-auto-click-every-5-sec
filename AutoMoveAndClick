@@ -16,4 +16,4 @@ while True:
     y = randint(screen_height,screen_width)
     click(x,y)
     print('i am moving to x=',x,' and y=',y)
-    time.sleep(10)#call each 10 seconds
+    time.sleep(5)#call each 5 seconds
