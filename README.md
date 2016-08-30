@@ -1,0 +1,1 @@
+# python-script-to-move-mouse-and-auto-click-every-5-sec
