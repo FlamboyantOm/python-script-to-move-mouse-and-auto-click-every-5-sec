@@ -1,5 +1,5 @@
 from random import *
-import win32api, win32con,time,tkinter
+import win32api, win32con,time,tkinter as tk
 def click(x,y):
     # cursor move
     win32api.SetCursorPos((x,y))
